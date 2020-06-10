@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&family=Nanum+Pen+Script&family=Raleway:wght@700&display=swap");
+.__button a:visited:link {
+  color: #fdcb46;
+  text-decoration: none;
+}
+
+a:visited:link {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=app.component.css.map */

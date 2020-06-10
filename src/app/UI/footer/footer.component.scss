@@ -1,10 +1,14 @@
+.soon{ width: 30%}
 .footer-cs{
+width:100%;
+background-color: gray;
+  justify-content: center;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items:end;
+  flex-wrap: nowrap;
+  align-items:center;
   align-content: center;
+  margin-bottom: 10px;
 }
 .footer-stick {
   background-color:#579c87;
@@ -14,18 +18,17 @@
 
 }
 .footer-container {
+  margin-top:15%;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-around;
   align-content: center;
 }
 
 .__button{
-  border-radius: 50px;
-  margin: 4px 12px;
-  padding: 2px 4px;
-  font-size:1em;
+  border-radius: 30px;
+  font-size:100%;
   font-family: "Raleway", sans-serif;
   background-color: #579c87;
 
@@ -48,10 +51,7 @@
     justify-content: space-between;
   }
 }
-.ellipsis{
-  display: flex;
-  flex-direction: row;
-}
+
 @media (min-width: 768px) and (orientation: landscape) {
   .footer-stick{
     position: fixed;
@@ -73,7 +73,7 @@
   display: block;
 }
 .footer-stick .__button a:hover {
-  animation: wiggle 0.5s infinite;
+  animation: shake 0.5s infinite;
 }
 .__button:nth-child(3) {
   display: flex;
@@ -97,7 +97,7 @@
 .__button:nth-child(3) div.ellipsis .__dot:nth-child(3) {
   animation-delay: -0.9s;
 }
-@keyframes wiggle {
+@keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
   }
@@ -130,5 +130,98 @@
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+
+
+.dot-elastic {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fdcb46;
+  color: #fdcb46;
+  animation: dotElastic 1s infinite linear;
+}
+
+.dot-elastic::before, .dot-elastic::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-elastic::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fdcb46;
+  color: #fdcb46;
+  animation: dotElasticBefore 1s infinite linear;
+}
+
+.dot-elastic::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fdcb46;
+  color: #fdcb46;
+  animation: dotElasticAfter 1s infinite linear;
+}
+
+@keyframes dotElasticBefore {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1.5);
+  }
+  50% {
+    transform: scale(1, 0.67);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes dotElastic {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1.5);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes dotElasticAfter {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.67);
+  }
+  75% {
+    transform: scale(1, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
