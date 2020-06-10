@@ -1,9 +1,9 @@
 .footer-cs{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: baseline;
+  align-items:end;
   align-content: center;
 }
 .footer-stick {
@@ -16,8 +16,8 @@
 .footer-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
   align-content: center;
 }
 
@@ -47,6 +47,10 @@
     display: flex;
     justify-content: space-between;
   }
+}
+.ellipsis{
+  display: flex;
+  flex-direction: row;
 }
 @media (min-width: 768px) and (orientation: landscape) {
   .footer-stick{
