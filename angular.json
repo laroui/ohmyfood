@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ohmyfood"
+    }
+  },
+  "defaultProject": "ohmyfood",
+  "cli": {
+    "analytics": false
+  }
 }
