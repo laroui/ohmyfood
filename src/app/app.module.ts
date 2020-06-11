@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {SoonComponent} from './soon/soon.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './UI/footer/footer.component';
@@ -13,10 +13,11 @@ import { MNoteComponent } from './Menus/m-note/m-note.component';
 import { MFrchicComponent } from './Menus/m-frchic/m-frchic.component';
 import { MDelicesComponent } from './Menus/m-delices/m-delices.component';
 import { MPalgoutsComponent } from './Menus/m-palgouts/m-palgouts.component';
-import { SoonComponent } from './soon/soon.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
+    SoonComponent,
     AppComponent,
     FooterComponent,
     HeaderComponent,
@@ -26,10 +27,10 @@ import { SoonComponent } from './soon/soon.component';
     MNoteComponent,
     MFrchicComponent,
     MDelicesComponent,
-    MPalgoutsComponent,
-    SoonComponent
+    MPalgoutsComponent
   ],
   imports: [
+    FontAwesomeModule,
     BrowserModule,
     AppRoutingModule
   ],

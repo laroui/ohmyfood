@@ -14,8 +14,14 @@
   border: 2px solid grey;
   text-align: center;
   width: 40%;
+  flex-wrap: nowrap;
   padding: 5% 10%;
   box-sizing: border-box;
+}
+
+.m_note_icon {
+  height: 60px;
+  width: 60px;
 }
 
 a {

@@ -1,39 +1,40 @@
-.contact{
-  float:left;
+.contact {
+  float: left;
 }
-.legal{
-  float:right;
+
+.legal {
+  float: right;
 }
+
 .footer-stick {
-  background-color:#579c87;
+  background-color: #579c87;
   position: fixed;
   bottom: 0;
   width: 100%;
-
 }
 
-
-.__button{
-  padding-top:10px;
+.__button {
+  padding-top: 10px;
   margin-right: 20px;
   margin-left: 5px;
   border-radius: 30px;
-  font-size:40%;
+  font-size: 40%;
   font-family: "Raleway", sans-serif;
   background-color: #579c87;
-
 }
-.__button a:link{
+
+.__button a:link {
   color: #fdcb46;
   text-decoration: none;
 }
-.__button a:visited{
+
+.__button a:visited {
   color: #fdcb46;
   text-decoration: none;
-
 }
+
 @media (min-width: 768px) and (orientation: landscape) {
-  .footer-stick  {
+  .footer-stick {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -41,21 +42,23 @@
     justify-content: space-between;
   }
 }
-
 @media (max-width: 768px) and (orientation: landscape) {
-  .footer-stick{
+  .footer-stick {
     height: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
   }
+
   .footer-stick .__button {
     border-radius: 30px;
     margin-bottom: 0;
   }
+
   .footer-stick .__button:first-child {
     text-align: left;
   }
+
   .footer-stick .__button:last-child {
     text-align: right;
   }
@@ -63,6 +66,7 @@
 .footer-stick .__button a {
   display: block;
 }
+
 .footer-stick .__button a:hover {
   animation: shake 0.5s infinite;
 }
@@ -103,6 +107,4 @@
   }
 }
 
-
-
-
+/*# sourceMappingURL=footer.component.css.map */
