@@ -13,6 +13,7 @@ import { MNoteComponent } from './Menus/m-note/m-note.component';
 import { MFrchicComponent } from './Menus/m-frchic/m-frchic.component';
 import { MDelicesComponent } from './Menus/m-delices/m-delices.component';
 import { MPalgoutsComponent } from './Menus/m-palgouts/m-palgouts.component';
+import { SoonComponent } from './soon/soon.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MPalgoutsComponent } from './Menus/m-palgouts/m-palgouts.component';
     MNoteComponent,
     MFrchicComponent,
     MDelicesComponent,
-    MPalgoutsComponent
+    MPalgoutsComponent,
+    SoonComponent
   ],
   imports: [
     BrowserModule,

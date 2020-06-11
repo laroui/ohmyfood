@@ -1,0 +1,60 @@
+@media (min-width: 768px) and (orientation: landscape) {
+  .soon {
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    width: 50%;
+    border-radius: 16px;
+  }
+}
+.dot-elastic {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fdcb46;
+  color: #fdcb46;
+  animation: dotElastic 2s infinite linear;
+}
+
+.dot-elastic::before, .dot-elastic::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-elastic::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fdcb46;
+  color: #fdcb46;
+  animation: dotElasticBefore 1s infinite linear;
+}
+
+.soon h3{
+  border: #3c1218 solid;
+  padding: 5% 5% 10% 10%;
+  color: #fdcb46;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 16px;
+  background-color:#579c87;
+  width: 100%}
+a{
+  text-decoration: none;
+}
+
+.soon {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

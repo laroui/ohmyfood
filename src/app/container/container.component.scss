@@ -13,7 +13,9 @@
   text-align: center;
 
   width: 40%;
+
   padding: 5% 10%;
+ 
 
   box-sizing:border-box
 }
@@ -22,5 +24,39 @@ a {
 }
 .m_note p{
   font-size:30px;
-  font-family:Devonshire;
+  font-family: Devonshire, serif;
 }
+.m_note a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.m_note :hover {
+  animation: zoom 1500ms ease-in-out forwards;
+}
+.m_note h1 {
+  font-family: "Bad Script", cursive;
+}
+.m_note.one {
+  background-color: #fcdfdb;
+}
+.m_note.one .fa-music {
+  font-size: 2.5em;
+  color: #f15f62;
+}
+.m_note.one p {
+  font-family: "Devonshire", cursive;
+  font-size: 2em;
+  margin-top: 0;
+  color: #3c1218;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .m_note.one p {
+    font-size: 3.5em;
+  }
+}
+.m_note.one h1 {
+  color: #3c1218;
+  font-size: 2.5em;
+  text-transform: uppercase;}
