@@ -1,0 +1,174 @@
+/*allPages*/
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&faminy=Bad+Script&family=Alice&family=Parisienne&family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&family=Nanum+Pen+Script&family=Raleway&family=Croissant+One&display=swap");
+h1 {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu_container h1 {
+  text-align: left;
+}
+
+main, .menu_container {
+  width: 80%;
+  margin: auto;
+}
+
+/*all menu pages*/
+.menu_container h1 {
+  justify-content: center;
+  text-align: center;
+}
+
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-family: "Kalam", cursive;
+  font-size: 0.8em;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .menu_container {
+    font-size: 1.6em;
+  }
+}
+.menu_container h2 {
+  margin-top: 200px;
+}
+.menu_container p {
+  line-height: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.menu_container p span:last-child {
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.menu_container {
+  background-color: #fcdfdb;
+  color: #3c1218;
+}
+
+.menu_container i {
+  text-align: center;
+  font-size: 2.5em;
+  color: #f15f62;
+}
+
+.menu_container h1 {
+  font-family: "Devonshire";
+  color: #3c1218;
+  margin: 0;
+}
+
+.menu_container h1 i {
+  font-size: 1em;
+}
+
+.menu_container h2 {
+  margin: 50px 0 28px 0;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+}
+
+.menu_container h2::before {
+  content: "";
+  display: block;
+  width: 23%;
+  height: 4px;
+  background: #3c1218;
+  position: absolute;
+  top: 50%;
+  transform: scaleX(1);
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
+}
+
+.menu_container h2::after {
+  content: "";
+  display: block;
+  width: 23%;
+  height: 4px;
+  background: #3c1218;
+  position: absolute;
+  top: 50%;
+  transform: scaleX(1);
+  right: 0;
+  transform-origin: right;
+  transition: transform;
+}
+
+.menu_container h2:hover::before {
+  transform: scalex(4.35) translateY(400%);
+}
+
+.menu_container h2:hover::after {
+  transform: scaleX(0);
+}
+
+.menu_container {
+  background-color: #fcdfdb;
+  color: #3c1218;
+}
+.menu_container i {
+  text-align: center;
+  font-size: 2.5em;
+  color: #f15f62;
+}
+.menu_container h1 {
+  font-family: "Devonshire";
+  color: #3c1218;
+  margin: 0;
+}
+.menu_container h1 i {
+  font-size: 1em;
+}
+.menu_container h2 {
+  margin: 50px 0 28px 0;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+}
+.menu_container h2::before {
+  content: "";
+  display: block;
+  width: 23%;
+  height: 4px;
+  background: #3c1218;
+  position: absolute;
+  top: 50%;
+  transform: scaleX(1);
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
+}
+.menu_container h2::after {
+  content: "";
+  display: block;
+  width: 23%;
+  height: 4px;
+  background: #3c1218;
+  position: absolute;
+  top: 50%;
+  transform: scaleX(1);
+  right: 0;
+  transform-origin: right;
+  transition: transform;
+}
+.menu_container h2:hover::before {
+  transform: scalex(4.35) translateY(400%);
+}
+.menu_container h2:hover::after {
+  transform: scaleX(0);
+}
+
+/*# sourceMappingURL=m-note.component.css.map */

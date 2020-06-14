@@ -1,0 +1,23 @@
+@media (max-width: 768px) and (orientation: landscape) {
+  .header {
+    font-size: 1em;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  background-color: #579c87;
+  color: #fdcb46;
+}
+.header a {
+  color: #fdcb46;
+  text-decoration: none;
+}
+.header h1 {
+  font-weight: bold;
+  font-size: 3em;
+}

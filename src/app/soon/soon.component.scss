@@ -1,0 +1,99 @@
+@media (max-width:768px) {
+  .boutton{
+display: none;
+  }
+}
+i{
+  font-size: 0.3em;
+  padding-right: 2px;
+}
+.boutton {
+  font-family: "Raleway", sans-serif;
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+  font-size: 1.8em;
+  width: 80%;
+  padding: 5px;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .boutton {
+    margin: 0 auto 10px;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 50%;
+  }
+}
+.boutton a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+.boutton:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+
+
+
+@keyframes blink {
+  /**
+   * At the start of the animation the dot
+   * has an opacity of .2
+   */
+  0% {
+    opacity: .4;
+  }
+  /**
+   * At 20% the dot is fully visible and
+   * then fades out slowly
+   */
+  50% {
+    opacity: 1;
+  }
+  /**
+   * Until it reaches an opacity of .4 and
+   * the animation can start again
+   */
+  100% {
+    opacity: .4;
+  }
+}
+
+.saving span {
+  /**
+   * Use the blink animation, which is defined above
+   */
+  animation-name: blink;
+  /**
+   * The animation should take 1.4 seconds
+   */
+  animation-duration: 2s;
+  /**
+   * It will repeat itself forever
+   */
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .4s;
+}
+
+.saving span:nth-child(3) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .7s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .7s;
+}

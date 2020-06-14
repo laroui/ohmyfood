@@ -1,0 +1,90 @@
+
+@import"../../utils/variables";
+@import "../menu-style";
+@import"../../utils/mixins";
+
+.menu_container {
+  background-color: #fcdfdb;
+  color: #3c1218;
+}
+.menu_container i {
+  text-align: center;
+  font-size: 2.5em;
+  color: #f15f62;
+}
+.menu_container h1 {
+  font-family: "Devonshire";
+  color: #3c1218;
+  margin: 0;
+}
+.menu_container h1 i {
+  font-size: 1em;
+}
+.menu_container h2 {
+  margin: 50px 0 28px 0;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+}
+.menu_container h2::before {
+  content: "";
+  display: block;
+  width: 23%;
+  height: 4px;
+  background: #3c1218;
+  position: absolute;
+  top: 50%;
+  transform: scaleX(1);
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
+}
+.menu_container h2::after {
+  content: "";
+  display: block;
+  width: 23%;
+  height: 4px;
+  background: #3c1218;
+  position: absolute;
+  top: 50%;
+  transform: scaleX(1);
+  right: 0;
+  transform-origin: right;
+  transition: transform;
+}
+.menu_container h2:hover::before {
+  transform: scalex(4.35) translateY(400%);
+}
+.menu_container h2:hover::after {
+  transform: scaleX(0);
+}
+.menu_container {
+  background-color: $back-menu-one;
+  color: $color-menu-one;
+  i {
+    text-align: center;
+    font-size: 2.5em;
+    color: #f15f62;
+  }
+  h1 {
+    @include menu-title('Devonshire', $color-menu-one);
+    i {
+      font-size: 1em;
+    }
+  }
+  h2 {
+    @include title-line;
+    &::before {
+      @include title-line-left($color-menu-one);
+    }
+    &::after {
+      @include title-line-right($color-menu-one);
+    }
+    &:hover::before {
+      @include underline-left-to-right;
+    }
+    &:hover::after {
+      @include disappear-line;
+    }
+  }
+}

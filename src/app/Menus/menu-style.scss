@@ -1,0 +1,54 @@
+/*allPages*/
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&faminy=Bad+Script&family=Alice&family=Parisienne&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&family=Nanum+Pen+Script&family=Raleway&family=Croissant+One&display=swap');
+
+h1 {
+  width: 100%;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.menu_container {
+  h1 {
+    text-align: left;
+  }
+}
+
+main, .menu_container {
+  width: 80%;
+  margin: auto;
+}
+
+/*all menu pages*/
+.menu_container h1{
+  justify-content: center;
+
+  text-align: center;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Kalam', cursive;
+  font-size: 0.8em;
+  @media (min-width: 768px) and (orientation: landscape) {
+    font-size: 1.6em;
+  }
+  h2 {
+    margin-top: 200px;
+  }
+  p {
+    line-height: 2em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    span:last-child{
+      font-weight: bold;
+      padding-left: 3px;
+    }
+  }
+}

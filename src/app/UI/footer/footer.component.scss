@@ -1,0 +1,175 @@
+
+@media (min-width: 768px){
+  .mobile{
+    display: none;
+  }
+}
+.contact{
+
+  float:left;
+}
+legal{
+  float:right;
+
+}
+.footer{
+  border-radius: 17px;
+  margin-top: 20%;
+  background-color:#579c87 ;
+  display: block;
+
+}
+i{
+  font-size: 0.2em;
+  padding-right: 2px;
+}
+.boutton{
+  padding-left: 5px;
+  padding-right: 20px ;
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+}
+.boutton a:link{
+  color: #fdcb46;
+  text-decoration: none;
+}
+.boutton a:visited{
+  color: #fdcb46;
+  text-decoration: none;
+
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .footer  {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .footer{
+    justify-content: center;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer .boutton {
+    margin-bottom: 0;
+  }
+  .footer .boutton:first-child {
+    text-align: left;
+  }
+  .footer .boutton:last-child {
+    text-align: right;
+  }
+}
+.footer .boutton a {
+  display: block;
+}
+.footer .boutton a:hover {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes blink {
+  /**
+   * At the start of the animation the dot
+   * has an opacity of .2
+   */
+  0% {
+    opacity: .4;
+  }
+  /**
+   * At 20% the dot is fully visible and
+   * then fades out slowly
+   */
+  50% {
+    opacity: 1;
+  }
+  /**
+   * Until it reaches an opacity of .4 and
+   * the animation can start again
+   */
+  100% {
+    opacity: .4;
+  }
+}
+
+.saving span {
+  /**
+   * Use the blink animation, which is defined above
+   */
+  animation-name: blink;
+  /**
+   * The animation should take 1.4 seconds
+   */
+  animation-duration: 2s;
+  /**
+   * It will repeat itself forever
+   */
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .4s;
+}
+
+.saving span:nth-child(3) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .7s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .7s;
+}
+
+
+
+

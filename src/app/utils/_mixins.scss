@@ -1,0 +1,64 @@
+@mixin button {
+    font-family: 'Raleway', sans-serif;
+    background-color: $background-color;
+    color: $logo-color;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 5px;
+    @media (min-width: 768px) and (orientation: landscape) {
+        margin: 0 auto 30px;
+        font-size: 2.2em;
+        padding: 15px;
+        width: 80%;
+    }
+    a {
+        text-decoration: none;
+        color: $logo-color;
+    }
+}
+
+@mixin menu-title($font-family, $color) {
+    font-family: $font-family;
+    color: $color;
+    margin: 0;
+}
+
+@mixin title-line {
+    margin: 50px 0 28px 0;
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+}
+
+@mixin side-title-line-common($color, $width: 23%, $thickness: 4px) {
+    content: "";
+    display: block;
+    width: $width;
+    height: $thickness;
+    background: $color;
+    position: absolute;
+    top: 50%;
+    transform: scaleX(1);
+}
+
+@mixin title-line-left($color, $width: 23%, $thickness: 4px) {
+    @include side-title-line-common($color, $width, $thickness);
+    left: 0;
+    transform-origin: left;     
+    transition: transform .4s cubic-bezier(0, .5, 0, 1);
+}
+
+@mixin title-line-right($color, $width: 23%, $thickness: 4px) {
+    @include side-title-line-common($color, $width, $thickness);
+    right: 0;
+    transform-origin: right;
+    transition: transform;
+}
+
+@mixin underline-left-to-right($lenght: scalex(4.35)) {
+    transform: $lenght translateY(400%);
+}
+
+@mixin disappear-line {
+    transform: scaleX(0);
+}

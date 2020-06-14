@@ -1,0 +1,54 @@
+@import"../../utils/variables";
+@import "../menu-style";
+@import"../../utils/mixins";
+.menu_container {
+  background-color: #fdfffd;
+}
+.menu_container h1 {
+  font-family: "Kaushan Script";
+  color: #72bf56;
+  margin: 0;
+  background: -webkit-linear-gradient(left, #3e923a, #beff7f);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu_container h2 {
+  margin: 50px 0 28px 0;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+}
+.menu_container h2::before {
+  content: "";
+  display: block;
+  width: 23%;
+  height: 4px;
+  background: #72bf56;
+  position: absolute;
+  top: 50%;
+  transform: scaleX(1);
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
+}
+.menu_container h2::after {
+  content: "";
+  display: block;
+  width: 23%;
+  height: 4px;
+  background: #72bf56;
+  position: absolute;
+  top: 50%;
+  transform: scaleX(1);
+  right: 0;
+  transform-origin: right;
+  transition: transform;
+}
+.menu_container h2:hover::before {
+  transform: scalex(4.35) translateY(400%);
+}
+.menu_container h2:hover::after {
+  transform: scaleX(0);
+}
+

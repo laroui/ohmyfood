@@ -1,0 +1,24 @@
+@import"./utils/variables";
+@import"./utils/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&family=Nanum+Pen+Script&family=Raleway:wght@700&display=swap');
+.boutton  a:visited:link {
+  color: #fdcb46;
+  text-decoration: none;
+
+}
+
+a:visited:link{
+  text-decoration: none;
+}
+
+$background-color: #579c87;
+$logo-color: #fdcb46;
+$back-menu-one: #fcdfdb;
+$back-menu-two: #fff5fe;
+$back-menu-three: #f9f9f9;
+$back-menu-four: #fdfffd;
+$color-menu-one: #3c1218;
+$color-menu-two: #c77412;
+$color-menu-three: #0887fb;
+$color-menu-four: #72bf56;
+
