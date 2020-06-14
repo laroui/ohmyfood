@@ -1,0 +1,45 @@
+/*allPages*/
+h1 {
+  text-align: center;
+}
+
+.menu_container h1 {
+  text-align: left;
+}
+
+main, .menu_container {
+  width: 80%;
+  margin: auto;
+}
+
+/*all menu pages*/
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-family: "Kalam", cursive;
+  font-size: 0.8em;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .menu_container {
+    font-size: 1.6em;
+  }
+}
+.menu_container h2 {
+  margin-top: 200px;
+}
+.menu_container p {
+  line-height: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.menu_container p span:last-child {
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+/*# sourceMappingURL=menu-style.css.map */
